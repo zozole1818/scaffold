@@ -1,4 +1,4 @@
-module com/zuzanna/scaffold
+module github.com/zozole1818/scaffold
 
 go 1.24.5
 
