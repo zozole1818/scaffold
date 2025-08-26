@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"com/zuzanna/scaffold/internal"
-	"com/zuzanna/scaffold/internal/tmpl"
 	"github.com/spf13/cobra"
+	"github.com/zozole1818/scaffold/internal"
+	"github.com/zozole1818/scaffold/internal/tmpl"
 	"log/slog"
 	"path/filepath"
 )
