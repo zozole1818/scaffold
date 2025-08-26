@@ -8,8 +8,9 @@ import (
 var outputDirName = "out"
 
 var rootCmd = &cobra.Command{
-	Use:   "",
-	Short: "Creates scaffolding for a new project",
+	Use:     "",
+	Version: "v.1.0.1-alpha.1",
+	Short:   "Creates scaffolding for a new project",
 	Long: `Should be able to create new go project with initial code structure that enables 
 you to quickly build a new project.`,
 	// Uncomment the following line if your bare application
@@ -30,7 +31,7 @@ func init() {
 	// will be global for your application.
 
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.ordersys.yaml)")
-	rootCmd.PersistentFlags().BoolP("verbose", "v", false, "verbose output")
+	rootCmd.PersistentFlags().Bool("verbose", false, "verbose output")
 	rootCmd.PersistentFlags().Int64P("port", "p", 8080, "port to listen on")
 	rootCmd.PersistentFlags().StringP("projectName", "n", "test", "project name")
 	rootCmd.PersistentFlags().StringP("output", "o", "out", "location of where to create project")
