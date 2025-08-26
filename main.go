@@ -1,6 +1,6 @@
 package main
 
-import "com/zuzanna/scaffold/cmd"
+import "github.com/zozole1818/scaffold/cmd"
 
 func main() {
 	cmd.Execute()
