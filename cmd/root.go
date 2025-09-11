@@ -31,10 +31,10 @@ func init() {
 	// will be global for your application.
 
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.ordersys.yaml)")
-	rootCmd.PersistentFlags().Bool("verbose", false, "verbose output")
+	rootCmd.PersistentFlags().BoolP("verbose", "v", false, "verbose output")
 	rootCmd.PersistentFlags().Int64P("port", "p", 8080, "port to listen on")
 	rootCmd.PersistentFlags().StringP("projectName", "n", "test", "project name")
-	rootCmd.PersistentFlags().StringP("output", "o", "out", "location of where to create project")
+	rootCmd.PersistentFlags().StringP("output", "o", ".", "location of where to create project")
 	rootCmd.PersistentFlags().StringP("moduleName", "m", "com/example", "name of Go module")
 	rootCmd.PersistentFlags().String("goVersion", "1.24.5", "version of a Go")
 	rootCmd.PersistentFlags().Bool("debugLogger", false, "enable debug logging")
