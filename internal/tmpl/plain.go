@@ -13,7 +13,9 @@ func GetPlainMainTemplate() string {
 import (
 	"context"
 	"fmt"
+{{ if .DebugLogger }}
 	"log/slog"
+{{ end }}
 	"os"
 	"os/signal"
 	"syscall"
