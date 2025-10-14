@@ -33,9 +33,9 @@ func init() {
 	// rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.ordersys.yaml)")
 	rootCmd.PersistentFlags().BoolP("verbose", "v", false, "verbose output")
 	rootCmd.PersistentFlags().Int64P("port", "p", 8080, "port to listen on")
-	rootCmd.PersistentFlags().StringP("projectName", "n", "test", "project name")
+	rootCmd.PersistentFlags().StringP("projectName", "n", "example", "project name")
 	rootCmd.PersistentFlags().StringP("output", "o", ".", "location of where to create project")
-	rootCmd.PersistentFlags().StringP("moduleName", "m", "com/example", "name of Go module")
+	rootCmd.PersistentFlags().StringP("moduleName", "m", "github.com/zozole1818/example", "name of Go module")
 	rootCmd.PersistentFlags().String("goVersion", "1.24.5", "version of a Go")
 	rootCmd.PersistentFlags().Bool("debugLogger", false, "enable debug logging")
 
